@@ -1,0 +1,11 @@
+name: geovalidator
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - geopandas
+  - shapely
+  - pyproj
+  - pyogrio
+  - fiona
+  - pytest  # For testing
