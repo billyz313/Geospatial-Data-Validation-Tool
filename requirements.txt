@@ -1,0 +1,5 @@
+geopandas
+shapely
+pyproj
+pyogrio
+fiona

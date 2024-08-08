@@ -31,16 +31,42 @@ The Geospatial Data Validation Tool is designed to facilitate the validation and
 
 ## Installation
 
-To install the tool, clone this repository and install the required dependencies using pip:
+There are a few different options, choose the one that is best for you.
 
+**Install from conda:**
 ```bash
-git clone https://github.com/yourusername/Geospatial-Data-Validation-Tool.git
-cd Geospatial-Data-Validation-Tool
-
-conda env create -f environment.yml
-conda activate geovalidator
-
+conda install billyz313::poly-validator
 ```
+
+**Install from pip**
+```bash
+pip install poly-validator
+```
+
+**Install from repo**
+
+- Using conda:
+      
+      
+      git clone https://github.com/billyz313/Geospatial-Data-Validation-Tool.git
+      cd Geospatial-Data-Validation-Tool
+      
+      conda env create -f environment.yml
+      conda activate geovalidator
+      
+      
+**OR**
+
+- Using venv:
+
+      bash
+      git clone https://github.com/billyz313/Geospatial-Data-Validation-Tool.git
+      cd Geospatial-Data-Validation-Tool
+      
+      python3 -m venv geovalidator
+      source geovalidator/bin/activate  # On Windows, use `geovalidator\Scripts\activate`
+      pip install -r requirements.txt
+      
 
 ## Usage
 
@@ -50,7 +76,7 @@ To load a GeoJSON file and perform validations, use the following script:
 
 ```python
 import geopandas as gpd
-from geovalidator.validators.topology import detect_overlaps, detect_gaps, detect_slivers, check_self_intersection
+from polyvalidator.validators.topology import detect_overlaps, detect_gaps, detect_slivers, check_self_intersection
 
 # Load the GeoJSON file
 file_path = 'path/to/your/file.geojson'
