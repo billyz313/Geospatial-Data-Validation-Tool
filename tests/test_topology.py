@@ -1,7 +1,7 @@
 import geopandas as gpd
 from shapely.geometry import Polygon
 
-from geovalidator.validators.topology import detect_overlaps, check_self_intersection, detect_gaps, detect_slivers
+from polyvalidator.validators.topology import detect_overlaps, check_self_intersection, detect_gaps, detect_slivers
 
 
 def test_detect_overlaps():

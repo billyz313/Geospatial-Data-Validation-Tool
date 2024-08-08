@@ -1,7 +1,7 @@
 import pytest
 import geopandas as gpd
 from shapely.geometry import Point
-from geovalidator.validators.completeness import check_missing_attributes, validate_attribute_types
+from polyvalidator.validators.completeness import check_missing_attributes, validate_attribute_types
 
 
 def test_check_missing_attributes():

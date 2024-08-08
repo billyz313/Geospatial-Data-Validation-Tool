@@ -1,7 +1,7 @@
 import pytest
 import geopandas as gpd
 from shapely.geometry import Point
-from geovalidator.validators.crs import validate_crs, reproject_to_crs
+from polyvalidator.validators.crs import validate_crs, reproject_to_crs
 
 
 def test_validate_crs():
